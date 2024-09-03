@@ -4,12 +4,12 @@ import numpy as np
 from datetime import datetime
 
 # Paths to the Caffe model and prototxt files for gender
-gender_model_path = "C:\\Users\\Lokes\\Downloads\\gender_net.caffemodel"
-gender_prototxt_path = "C:\\Users\\Lokes\\Downloads\\gender_deploy.prototxt"
+gender_model_path = "add the path of gender_net.caffemodel file"
+gender_prototxt_path = "add the path of gender_deploy.prototxt file"
 
 # Paths to the Caffe model and prototxt files for age
-age_model_path = "C:\\Users\\Lokes\\Downloads\\age_net.caffemodel"
-age_prototxt_path = "C:\\Users\\Lokes\\Downloads\\age_deploy.prototxt"
+age_model_path = "add the path of age_net.caffemodel file"
+age_prototxt_path = "add the path of age_deploy.prototxt file"
 
 if not all(os.path.exists(p) for p in [gender_model_path, gender_prototxt_path, age_model_path, age_prototxt_path]):
     raise FileNotFoundError("Model or prototxt file not found. Please check the file paths.")
@@ -26,7 +26,7 @@ age_ranges = ['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Initialize video capture with the video file path
-video_path = "C:\\Users\\Lokes\\Downloads\\test4.mp4"
+video_path = "add the path of your video"
 cap = cv2.VideoCapture(video_path)
 
 # Check if video opened successfully
